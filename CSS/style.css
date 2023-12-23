@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/*Header*/
+#header-main{
+    transition: ease-in-out 0.5s;
+    z-index: 100;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #ff6800;
+    width: 100%;
+    padding: 15px 100px;
+}
+.header-menu img{
+    height: 50px;
+    filter: brightness(0) invert(1);
+    width: auto;
+}
+
+.head-nav{
+    display: flex;
+    gap: 20px;
+}
+.head-nav a{
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+}
+#ideas-nav{
+    border-bottom: solid 4px white;
+}
+
+.headscrolld{
+    background-color: #ff66009a;
+    backdrop-filter: blur(10px);
+}
+.scroll-up {
+    transform: translateY(-100%);
+}
+
+/*Banner*/
+.banner-section{
+    height: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.banner-textcontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.229);
+}
+.banner-textcontainer h1{
+    font-size: 4.5vw;
+    font-weight: 200;
+}
+.banner-textcontainer h4{
+    font-size: 2vw;
+    font-weight: 200;
+}
+.deselement{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30vh solid white;
+}
+
+/*Content*/
+.content-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+    height: 3000px;
+}
+.filter-container{
+    width: 100%;
+    height: 50px;
+    background-color: #ff6800;
+    border-radius: 20px;
+}
+.main-content{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 20px;
+}
+.page-navigator{
+    width: 100%;
+    height: 40px;
+    background-color: #ff6800;
+    border-radius: 20px;
+}
